@@ -19,5 +19,5 @@ try:
     )
     cursor = conn.cursor()
     print("Database Connection was successful")
-except:
-    return {"message": "db connection failed"}
+except Exception as e:
+    print(f"error connecting to db {e}")
